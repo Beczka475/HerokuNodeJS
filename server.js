@@ -5,12 +5,15 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/data", function (req, res) {
     let obiekt = {
-        imie: "Imię",
-        nazwisko: "Nazwisko",
-        klasa: "klasa",
-        grupa: "grupa"
+        imie: "Bartłomiej",
+        nazwisko: "Hodurek",
+        klasa: "3i1",
+        grupa: "1"
     }
     res.send(obiekt)
+})
+app.get("/", function (req, res) {
+    res.send("Mój pierwszy heroku")
 })
 
 app.listen(PORT, function () {
